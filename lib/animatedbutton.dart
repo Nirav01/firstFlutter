@@ -52,14 +52,14 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
       body: Center(
           child: Container(
             width: 180,
-            height: 80,
+            height: 60,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(4),
-              border: Border.all(color: Colors.blue, width: 2),
+              borderRadius: BorderRadius.circular(30),
+
               gradient: SweepGradient(
                 startAngle: 4,
-                colors: [Colors.yellow, Colors.blue],
-                transform: GradientRotation(_animationController.value * 6),
+                colors: [Colors.yellow, Colors.indigo],
+                transform: GradientRotation(_animationController.value * 3),
               ),
             ),
             child: Padding(
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                 child: Text(
                   "Button",
                   style: TextStyle(
-                    color: Colors.blue,
+                    color: Colors.indigo,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
@@ -79,8 +79,8 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
             ),
           ),
         ),
-      ),
-    );
+      );
+
   }
 
   @override
